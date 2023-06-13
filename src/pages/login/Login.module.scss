@@ -1,0 +1,215 @@
+.contain {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main {
+        width: 80%;
+        height: 80%;
+        background-color: white;
+        display: flex;
+        border-radius: 40px;
+        padding: 60px 50px;
+
+        .loginForm {
+            width: 50%;
+            .header {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 2.25rem;
+                line-height: 3.2rem;
+                color: #D885A3;
+            }
+
+            .loginTitle {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 3.2rem;
+                line-height: 5.25rem;
+                color: #000000;
+            }
+
+            .footerLogin{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .loginBtn {
+                    background: #D885A3;
+                    border-radius: 23px;
+                    display: flex;
+                    align-items: center;
+                    outline: none;
+                    border: none;
+                    padding: 10px 20px;
+                    color: white;
+                    margin-bottom: 10px;
+                }
+                .signUpText{
+                    margin-top: 10px;
+                    a{
+                        text-decoration: none;
+                        color: #D885A3;
+                    }
+                }
+
+                
+            }
+        }
+
+        .right {
+            width: 50%;
+
+            .character {
+                width: 100%;
+                height: 80%;
+                position: relative;
+            }
+        }
+    }
+}
+@media (max-width: 850px) {
+    .contain {
+        .main {
+            border-radius: 40px;
+            padding: 40px 30px;
+            height: 70%;
+    
+            .loginForm {
+                width: 50%;
+                .header {
+                    font-size: 2rem;
+                    line-height: 2.8rem;
+                }
+    
+                .loginTitle {
+                    font-size: 2.8rem;
+                    line-height: 4rem;
+                }
+    
+                .footerLogin{
+                    .loginBtn {
+                        margin-bottom: 10px;
+                    }
+                    .signUpText{
+                        margin-top: 10px;
+                        font-size: 0.9rem;
+                        a{
+                            text-decoration: none;
+                            color: #D885A3;
+                        }
+                    }
+    
+                    
+                }
+            }
+    
+            .right {
+                width: 50%;
+    
+                .character {
+                    width: 100%;
+                    height: 80%;
+                    position: relative;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 750px) {
+    .contain {
+        .main {
+            border-radius: 40px;
+            padding: 40px 30px;
+            height: 70%;
+            .loginForm {
+                width: 100%;
+                .header {
+                    font-size: 2rem;
+                    line-height: 2.8rem;
+                }
+    
+                .loginTitle {
+                    font-size: 2.8rem;
+                    line-height: 4rem;
+                }
+    
+                .footerLogin{
+                    .loginBtn {
+                        margin-bottom: 10px;
+                    }
+                    .signUpText{
+                        margin-top: 10px;
+                        font-size: 1.2rem;
+                        a{
+                            text-decoration: none;
+                            color: #D885A3;
+                        }
+                    }
+    
+                    
+                }
+            }
+    
+            .right {
+                display: none;
+    
+                .character {
+                    width: 100%;
+                    height: 80%;
+                    position: relative;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 550px) {
+    .contain {
+        .main {
+            height: 60%;
+            border-radius: 40px;
+            padding: 40px 30px 10px 30px;
+            .loginForm {
+                width: 100%;
+                .header {
+                    font-size: 1.7rem;
+                    line-height: 2rem;
+                }
+    
+                .loginTitle {
+                    font-size: 2rem;
+                    line-height: 3rem;
+                }
+    
+                .footerLogin{
+                    .loginBtn {
+                        margin-bottom: 10px;
+                    }
+                    .signUpText{
+                        margin-top: 10px;
+                        font-size: 0.7rem;
+                        a{
+                            text-decoration: none;
+                            color: #D885A3;
+                        }
+                    }
+    
+                    
+                }
+            }
+    
+            .right {
+                display: none;
+    
+                .character {
+                    width: 100%;
+                    height: 80%;
+                    position: relative;
+                }
+            }
+        }
+    }
+}

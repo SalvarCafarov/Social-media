@@ -1,0 +1,39 @@
+.comment {
+  display: flex;
+  min-height: 50px;
+  padding: 5px;
+  max-width: 200px;
+  padding-left: 10px;
+  
+  .left {
+    width: 30px;
+    aspect-ratio: 1/1;
+
+    img {
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+  .right {
+    font-size: 10px;
+    margin-left: 10px;
+    .head {
+      display: flex;
+      .date {
+        margin-left: 20px;
+      }
+    }
+    .content {
+      max-width: 120px;
+      width: 100%;
+      padding-right: 10px;
+      overflow: visible;
+      height: fit-content;
+      overflow-x: scroll;
+  &::-webkit-scrollbar{
+    display: none;
+    visibility: hidden;
+  }
+    }
+  }
+}

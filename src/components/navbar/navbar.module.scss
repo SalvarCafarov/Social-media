@@ -1,0 +1,281 @@
+
+  $main-hover-color:#4ca99b;
+  .navbarShadow {
+    width: 25%;
+    padding: 30px;
+    height: 100vh;
+  }
+  
+.navbar {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  height: 100vh;
+  width: 25%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  .top{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px;
+    width: 100%;
+    height: 140px;
+    .logo{
+      margin: auto;
+      width: 100%!important;
+      height: 100%!important;
+
+      object-fit: cover;
+
+    }
+  }
+  .mid{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .navItem{
+    
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    text-align: left;
+    color: white;
+    transition: all .6s;
+    margin-block: 10px;
+    a{
+    color: white;
+
+      text-decoration: none;
+    }
+    &:hover{
+      color: white;
+      background-color: $main-hover-color;
+      cursor: pointer;
+      a{
+        color: white;
+      }
+    }
+    .navItemInner{
+      display: flex;
+      align-items: center;
+      .itemIcon , .itemName{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .itemName{
+        margin-left: 10px;
+      }
+      .itemIcon{
+        font-size: 25px;
+      }
+    }
+  }
+}
+.searchModal{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(5, 4, 4, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  color: black;
+  .searchModalMain{
+    width: 60%;
+    height: 80%;
+    overflow: auto;
+    background-color: white;
+    position: relative;
+    opacity: 1;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    .modalTopSearch{
+        display: flex;
+         justify-content: space-between;
+         height: 50px;
+         align-items: center;
+         p{
+            text-align: center;
+            width: 100%;
+            font-size: 1.81rem;
+            font-weight: bold;
+         }
+        .closeBtn {
+            font-size: 1.5rem;
+            cursor: pointer;
+margin-right: 40px;
+            &:hover {
+                color: red;
+            }
+        }
+    }
+    input{
+      width: 90%;
+      margin: 20px auto;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid blue;
+      font-size: 1.2rem;
+      &::placeholder{
+        color: blue;
+      }
+    }
+  }
+}
+@media screen and (max-width:900px){
+  .navbarShadow {
+    width: 40%;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+.navbar {
+  color: green;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 100vh;
+  width: 30%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  .top{
+    padding: 20px;
+  }
+  .mid{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .navItem{
+    
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    text-align: left;
+    color: white;
+    transition: all .6s;
+    margin-block: 10px;
+    a{
+    color: white;
+
+      text-decoration: none;
+    }
+    &:hover{
+      color: white;
+      background-color: $main-hover-color;
+      cursor: pointer;
+      a{
+        color: white;
+      }
+    }
+    .navItemInner{
+      display: flex;
+      align-items: center;
+      .itemIcon , .itemName{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .itemName{
+        margin-left: 10px;
+      }
+      .itemIcon{
+        font-size: 20px;
+      }
+    }
+  }
+}
+}
+
+@media screen and (max-width:700px){
+  .navbarShadow {
+    min-width: 90px;
+    width: 90px;
+
+    padding: 30px;
+    height: 100vh;
+  }
+  
+.navbar {
+  color: green;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 100vh;
+  min-width: 90px;
+  width: 90px;
+align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  .top{
+    display: none;
+    padding: 20px;
+    .logo{
+      width: 100px;
+    }
+  }
+  .mid{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .navItem{
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: fit-content;
+    border: 0;
+    background-color: transparent;
+    text-align: left;
+    color: white;
+    transition: all .6s;
+    margin-block: 10px;
+    a{
+    color: white;
+
+      text-decoration: none;
+    }
+    &:hover{
+      color: white;
+      background-color: $main-hover-color;
+      cursor: pointer;
+      a{
+        color: white;
+      }
+    }
+    .navItemInner{
+      display: flex;
+      align-items: center;
+      .itemIcon , .itemName{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .itemName{
+        display: none;
+      }
+      .itemIcon{
+        font-size: 25px;
+      }
+    }
+  }
+}
+}

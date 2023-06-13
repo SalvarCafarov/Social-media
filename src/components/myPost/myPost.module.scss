@@ -1,0 +1,40 @@
+.mypost {
+  width: 31.5%;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+  aspect-ratio: 1/1;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media (max-width: 900px) {
+  .mypost {
+    width: 30.5%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 2px;
+    height: 150px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .mypost {
+    width: 90.5%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 2px;
+   height: 270px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,131 @@
+.container {
+
+  color:white;
+  padding: 30px;
+  width: 80%;
+  margin: auto;
+  .info {
+    display: flex;
+    padding: 20px;
+    .left {
+      padding-inline: 30px;
+      width: 170px;
+      aspect-ratio: 1/1;
+      min-width: 150px;
+      img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+      }
+    }
+    .right {
+      width: 40%;
+      min-width: 290px;
+      max-width: 350px;
+      .bottomBio{
+        margin-top: 12px;
+        max-height: 150px;
+        max-width: 70%;
+        overflow: hidden;
+      }
+      .top {
+        display: flex;
+        align-items: center;
+        button {
+          background-color: black;
+          color: white;
+          border-radius: 10px;
+          padding: 5px;
+          font-size: 12px;
+        }
+        .nickName {
+          padding-right: 15px;
+        }
+      }
+      .bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+      }
+    }
+  }
+  .withoutposts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+}.mainContainer{
+  display: flex;
+}
+@media (max-width: 700px) {
+  .container {
+    padding: 10px;
+    width: 100%;
+    .info {
+      display: flex;
+      padding: 0px;
+      padding-top: 10px;
+      .left {
+        padding-inline: 20px;
+        width: 110px;
+        aspect-ratio: 1/1;
+        img {
+          width: 100%;
+          aspect-ratio: 1/1;
+          border-radius: 50%;
+        }
+      }
+      .right {
+        width: 100%;
+        min-width: 200px;
+        max-width: 350px;
+        padding-top: 10px;
+        padding-left: 10px;
+        .top {
+          display: flex;
+          .nickName {
+            padding-right: 10px;
+          }
+        }
+        .bottom {
+          display: flex;
+          justify-content: flex-start;
+          margin-top: 14px;
+          font-size: 13px;
+          div {
+            padding-right: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30%;
+    .info{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      align-items: center;
+      .right{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .bottomBio{
+        font-size: 10px;
+        margin-top: 15px;
+        
+      }
+    }
+    
+  }
+}

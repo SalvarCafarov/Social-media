@@ -1,0 +1,42 @@
+.modalContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(5, 4, 4, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    color: black;
+    .main {
+        width: 60%;
+        height: 80%;
+        overflow: auto;
+        background-color: white;
+        position: relative;
+        opacity: 1;
+        border-radius: 20px;
+        .modalTop{
+            display: flex;
+             justify-content: space-between;
+             height: 50px;
+             align-items: center;
+             p{
+                text-align: center;
+                width: 100%;
+                font-size: 1.81rem;
+                font-weight: bold;
+             }
+            .closeBtn {
+                font-size: 1.5rem;
+                cursor: pointer;
+    margin-right: 40px;
+                &:hover {
+                    color: red;
+                }
+            }
+        }
+    }
+}

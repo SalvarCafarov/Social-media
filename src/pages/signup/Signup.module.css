@@ -1,0 +1,10 @@
+.loginContain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.loginContain .link{
+    margin-left: 6px;
+    font-size: 1.3rem;
+}
